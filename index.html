@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Mau Khỏi Ốm Nkaaaaa💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<div id="hearts"></div>
+<script>
+  const heartContainer = document.getElementById("hearts");
+
+  function createHeart() {
+    const heart = document.createElement("div");
+    heart.classList.add("heart-fall");
+    heart.innerHTML = "❤";
+
+    heart.style.left = Math.random() * 100 + "vw";
+    heart.style.fontSize = Math.random() * 20 + 12 + "px";
+    heart.style.animationDuration = Math.random() * 3 + 4 + "s";
+
+    heartContainer.appendChild(heart);
+
+    setTimeout(() => {
+      heart.remove();
+    }, 7000);
+  }
+  setInterval(createHeart, 300);
+</script>
+
+<body>
+
+  <h1>💗 Nocc Bếuuu 💗</h1>
+
+  <div class="heart">
+    <img src="p1.jpg">
+    <img src="p2.jpg">
+    <img src="p3.jpg">
+    <img src="p4.jpg">
+    <img src="p5.jpg">
+    <img src="p6.jpg">
+    <img src="p7.jpg">
+    <img src="p8.jpg">
+    
+  </div>
+
+</body>
+</html>
